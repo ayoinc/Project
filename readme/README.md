@@ -1,8 +1,6 @@
 # VAKT Interview Exam
 Sample Crypto Website Project for VAKT
 
-!!! Source code obtained from Crypterium demo. All rights reserved.
-
 The final deployment was deployed into Nginx
 
 # The CI tool implemented is Jenkins
@@ -17,7 +15,7 @@ The first instance has only 2 rules applied in the Security Group which are ```s
 
 The Second instance has 3 rules applied in the Security Group which are ```ssh 22 over tcp```, ```Web 8080 over tcp``` and alternative supporting ```Jenkins port 50000 over udp```. 
 
-Private key was generated to secure instance. On my machine terminal, I changed the ownership of the key with ```chomod og-wrx``` before being allowed to connect to the Instance.
+Private key was generated to secure instance. On my machine terminal, I changed the ownership of the key with ```chmod og-wrx``` before being allowed to connect to the Instance.
 
 - First Instance (nginx docker label) - with docker installed with  ```apt-get install docker.io``` and ```service docker start``` to enable docker to be used. Ran ```docker run -u root --rm -d -p 80:80 -p 31:21 -p 1022:22 -v nginx-data:/var/nginx_home -v /var/run/docker.sock:/var/run/docker.sock ubuntu-upstart``` with ```docker exec -it pensive_buck bash``` (pensive_buck bash is the name of the container).
 
@@ -31,8 +29,7 @@ The path for the index.html is located in /usr/share/nginx/html/ where git Proje
 Jenkins web service will now run with ec2 instance current public address on port 8080
 
 I have tried various protocols for the deployment, depending on what Vakt uses as the most secure as more appropriate to use as Devops Engineer.
-
-_In my own case, in Jenkins, new job was created as FreeStyle Project, GitHub url was specified and the following shell script was invoked:
+In Jenkins, new job was created as FreeStyle Project, GitHub url was specified and the following shell script was invoked:
 
 ```node {
 stage (‘Prepare environment’) {
