@@ -1,6 +1,3 @@
-# VAKT Interview Exam
-Sample Crypto Website Project for VAKT
-
 !!! Source code obtained from Crypterium demo. All rights reserved.
 
 The final deployment was deployed into Nginx
@@ -57,5 +54,3 @@ sh ‘ssh -P 1022 root@ec2-52-90-65-37.compute-1.amazonaws.com “rm -rf /usr/sh
 }
 }
 ```
-
-Then Build, this could be modified based the changes implemented and the need for the Client's Blockchain System.
