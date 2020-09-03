@@ -1,14 +1,15 @@
 pipeline {
   agent {
     docker {
-      image 'alpine'
+      image 'ubuntu'
+      args 'apt update'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'echo $USER'
+        sh 'apt update'
       }
     }
 
