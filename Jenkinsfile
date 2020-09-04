@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('Soft Task') {
-      steps {
-        sh 'cleanWs()'
-      }
-    }
-
   }
 }
