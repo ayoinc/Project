@@ -5,7 +5,7 @@ The final deployment was deployed into Nginx
 
 # The CI tool implemented is Jenkins
 
-Steps:
+Steps--:
 
 Source code written into Project with js, css and img files included
 
