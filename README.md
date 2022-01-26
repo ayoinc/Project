@@ -1,5 +1,7 @@
 !!! Source code obtained from Crypterium demo. All rights reserved.
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/fabfc2f3-b622-4bc5-a560-713f23a35139.svg?orgId=666444378491)](https://app.soluble.cloud/repos/details/github.com/ayoinc/project?orgId=666444378491)  
+
 The final deployment was deployed into Nginx
 
 # The CI tool implemented is Jenkins
